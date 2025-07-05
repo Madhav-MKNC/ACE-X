@@ -1,1 +1,0 @@
-# Mastodon interface client

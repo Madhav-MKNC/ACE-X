@@ -1,1 +1,0 @@
-# Expression strategy and planning

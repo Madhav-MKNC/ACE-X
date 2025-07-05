@@ -1,1 +1,0 @@
-# Self-criticism and evaluation

@@ -1,1 +1,0 @@
-# Value system and ethics

@@ -1,1 +1,0 @@
-# Strategy rewriting and optimization
