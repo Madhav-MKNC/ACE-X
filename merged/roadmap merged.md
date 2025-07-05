@@ -199,6 +199,12 @@ agent/
 │   ├── file_manager.py
 │   └── session_manager.py
 │
+├── cognition_engines/
+│   ├── ace_framework/
+│   ├── opencog/
+│   ├── lida/
+│   └── memory_graph/
+│
 ├── data/
 │   ├── logs/
 │   │   ├── execution.log
@@ -215,5 +221,77 @@ agent/
     ├── test_memory.py
     ├── test_ace_layers.py
     └── test_tools.py
+```
+
+---
+
+## 🛠 Dev Stack
+
+| Component         | Tool/Tech          |
+|------------------|--------------------|
+| LLM               | OpenAI (abstracted) |
+| Scheduler         | Python `asyncio`   |
+| Vector DB         | Chroma / FAISS     |
+| Storage           | SQLite / local FS  |
+| Logging           | rich / loguru      |
+| Prompt mgmt       | langchain or raw   |
+| Agent orchestration | custom or crewAI like shell |
+| Memory model      | custom + inspiration from ReAct, MemGPT |
+
+---
+
+### 🧠 Top-Level Cognitive Architecture
+
+```
+                   +--------------------+
+                   |  Conscious Loop    |
+                   |--------------------|
+                   | Global agent state |
+                   | Identity + traits  |
+                   | Emotion influence  |
+                   +--------+-----------+
+                            |
+         +------------------+-------------------+
+         |                                      |
++--------v--------+                    +--------v--------+
+| Perception Loop |                    | Reflection Loop |
+|-----------------|                    |-----------------|
+| Twitter input   |                    | Meta-reasoning  |
+| Embeddings      |                    | Self-eval/meta  |
+| Episodic logging|                    | Self-improvement|
++-----------------+                    +-----------------+
+
++---------------------------------------------------------+
+|                   Executive Control                     |
+|---------------------------------------------------------|
+| Goal selection | Action planning | Decision arbitration |
++---------------------------------------------------------+
+
++----------------------+     +----------------------------+
+| Memory Subsystems    |     | Expression Subsystems      |
+|----------------------|     |----------------------------|
+| Episodic             |     | Language generation        |
+| Semantic             |     | Expression strategies      |
+| Procedural           |     | Emotion-modulated tone     |
+| Reflective           |     | Reply/meme/thread writers  |
++----------------------+     +----------------------------+
+
++-------------------------+ +-----------------------------+
+| Tool Layer (Twitter, etc)| | Scheduler & Task Engine     |
+|-------------------------| |-----------------------------|
+| Twitter API             | | Cron-like heartbeat         |
+| External tools          | | Dynamic task queue          |
++-------------------------+ +-----------------------------+
+
++------------------------------+
+| ACE Framework Layers         |
+|------------------------------|
+| Aspirational (moral driver) |
+| Global Strategy             |
+| Agent Model                 |
+| Executive Function          |
+| Cognitive Control           |
+| Task Prosecution            |
++------------------------------+
 ```
 
