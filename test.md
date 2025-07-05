@@ -2,18 +2,27 @@
 agent/
 │
 ├── main.py
+├── run_agent.py
+├── README.md
+├── requirements.txt
 │
 ├── config/
-│   └── settings.py
+│   ├── settings.py
+│   ├── constants.py
+│   └── secrets.env
 │
 ├── core/
 │   ├── agent_core.py
 │   ├── consciousness_loop.py
+│   ├── consciousness.py
 │   ├── identity.py
 │   ├── self_model.py
 │   ├── agency.py
 │   ├── value_system.py
 │   ├── emotion_engine.py
+│   ├── mind_loop.py
+│   ├── reflection_loop.py
+│   ├── telemetry.py
 │   ├── goal_memory.py
 │   ├── situational_context.py
 │   ├── experience_synthesizer.py
@@ -31,19 +40,36 @@ agent/
 │   ├── event_modeler.py
 │   └── input_bus.py
 │
+├── ace/
+│   ├── aspirational.py
+│   ├── global_strategy.py
+│   ├── agent_model.py
+│   ├── executive_function.py
+│   ├── cognitive_control.py
+│   ├── task_prosecution.py
+│   └── interfaces.py
+│
 ├── memory/
 │   ├── episodic_memory.py
 │   ├── semantic_memory.py
 │   ├── procedural_memory.py
 │   ├── reflective_memory.py
 │   ├── working_memory.py
-│   └── memory_indexer.py
+│   ├── memory_indexer.py
+│   └── store/
+│       ├── faiss_index/
+│       ├── memory_logs/
+│       └── embeddings/
 │
 ├── reasoning/
 │   ├── llm_interface.py
 │   ├── reasoning_chain.py
 │   ├── pln_engine.py
 │   ├── planner.py
+│   ├── replanner.py
+│   ├── system_prompt.py
+│   ├── evaluator.py
+│   ├── strategy_formulator.py
 │   ├── goal_selector.py
 │   ├── task_selector.py
 │   └── meta_reasoner.py
@@ -58,31 +84,51 @@ agent/
 ├── interaction/
 │   └── dialogue_manager.py
 │
-├── self/
+├── meta/
 │   ├── self_reflector.py
+│   ├── self_critic.py
+│   ├── constitution_rewriter.py
+│   ├── strategy_rewriter.py
 │   ├── upgrade_engine.py
 │   ├── self_debugger.py
 │   └── agent_editor.py
 │
 ├── tools/
-│   ├── web_lookup.py
-│   └── toolchain.py
+│   ├── web_search.py
+│   ├── toolchain.py
+│   └── twitter/
+│       ├── twitter_client.py
+│       ├── observer.py
+│       └── media_tools.py
 │
 ├── interfaces/
-│   ├── twitter_client.py
-│   ├── reddit_client.py
-│   ├── mastodon_client.py
-│   ├── discord_client.py
-│   └── email_handler.py
+│   └── twitter/
+│   │   └── twitter_client.py
+│   └── reddit/
+│   │   └── reddit_client.py
+│   └── discord/
+│   │   └── discord_client.py
+│   └── telegram/
+│   │   └── telegram_client.py
+│   └── emails/
+│       └── emails_client.py
 │
 ├── infra/
 │   ├── db.py
 │   ├── file_manager.py
 │   └── session_manager.py
 │
+├── emotion/
+│   ├── affective_state.py
+│   ├── mood_modulation.py
+│   ├── frustration_model.py
+│   └── emotion_traits.py
+│
 ├── scheduler/
 │   ├── heartbeat.py
 │   ├── time_events.py
+│   ├── sleep_wake.py
+│   └── triggers.py
 │   └── task_queue.py
 │
 ├── cognition_engines/
@@ -91,10 +137,18 @@ agent/
 │   ├── lida/
 │   └── memory_graph/
 │
-└── data/
-    ├── logs/
-    ├── memory_store/
-    └── state_snapshots/
-
+├── data/
+│   ├── logs/
+│   │   ├── execution.log
+│   │   ├── reasoning.log
+│   │   └── actions.jsonl
+│   └── state_snapshots/
+│       └── mindstate_YYYYMMDD.json
+│
+└── tests/
+    ├── test_core.py
+    ├── test_memory.py
+    ├── test_ace_layers.py
+    └── test_tools.py
 ```
 
