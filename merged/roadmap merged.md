@@ -179,8 +179,19 @@ agent/
 │   ├── sleep_wake.py
 │   └── triggers.py
 │
+├── expression/
+│   ├── expression_strategy.py
+│   ├── tweet_generator.py
+│   ├── meme_engine.py
+│   ├── emotion_modulator.py
+│   └── persona_controller.py
+│
+├── interaction/
+│   └── dialogue_manager.py
+│
 ├── meta/
 │   ├── self_reflector.py
+│   ├── agent_editor.py
 │   ├── self_critic.py
 │   ├── constitution_rewriter.py
 │   ├── strategy_rewriter.py
