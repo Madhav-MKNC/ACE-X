@@ -136,27 +136,3 @@ Integrated support for:
 
 ---
 
-## 🧪 Tests
-
-- Unit tests for reasoning, emotion, and memory modules
-- Integration tests for ACE flow
-- Mock Twitter environments for dry-run tests
-
----
-
-## 📎 License
-
-MIT. Built for research, cognition modeling, and human-AI alignment experimentation.
-
----
-
-## 🙏 Credits
-
-- [Dave Shapiro](https://github.com/daveshap) — ACE Framework
-- [OpenCog](https://opencog.org/)
-- [LIDA cognitive architecture](https://ccrg.cs.memphis.edu/framework.html)
-- Twitter API client contributors
-- HuggingFace, OpenAI, and Langchain ecosystems
-
----
-

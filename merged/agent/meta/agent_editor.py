@@ -1,0 +1,1 @@
+# Agent self-editing capabilities
